@@ -81,7 +81,7 @@ export const HeroSocial = styled.div`
     margin-right: 2rem;
     margin-top: 3rem;
     cursor: pointer;
-    color: ${({ theme }) => theme.text};
+    color: var(--clr-primary-1);
     transition: 0.5s all ease;
     :hover {
       color: var(--clr-primary-5);
