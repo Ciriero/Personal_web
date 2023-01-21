@@ -1,20 +1,21 @@
 import React from 'react'
 import { FaLinkedin } from "react-icons/fa";
 import { ImGithub } from "react-icons/im";
+import { HeroButton, HeroCenter, HeroContainer, HeroSocial } from '../styles/Hero.styles';
 
 const Hero = () => {
   return (
-    <section>
-    <div className="animate__fadeIn">
+    <HeroContainer>
+    <HeroCenter>
       <article className="hero-info">
         <div className="underline"></div>
         <h1>Hola</h1>
         <h4>React Frontend Developer</h4>
-        <button>¡Escríbeme!</button>
-        <div>
+        <HeroButton>¡Escríbeme!</HeroButton>
+        <HeroSocial>
           <FaLinkedin />
           <ImGithub />
-        </div>
+        </HeroSocial>
       </article>
       <article className="hero-img">
         <img
@@ -23,8 +24,8 @@ const Hero = () => {
           className="hero-photo"
         />
       </article>
-    </div>
-  </section>
+    </HeroCenter>
+  </HeroContainer>
   )
 }
 
