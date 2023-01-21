@@ -16,7 +16,7 @@ const About = () => {
             />
           </article>
           <article className="about-info">
-            <div className="section-title about-title">
+            <div className="about-title">
               <h2>About</h2>
               <div className="underline"></div>
               <p>

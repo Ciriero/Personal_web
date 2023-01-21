@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const WrapperAbout = styled.div`
-  background-color: var(--clr-grey-9);
   transition: 1s all ease;
   padding-top: 5rem;
   .about {
@@ -14,4 +13,18 @@ export const WrapperAbout = styled.div`
 export const AboutCenter = styled.div`
   display: grid;
   gap: 3rem;
+  .about-img {
+    justify-self: center;
+  }
+  .about-photo {
+    max-width: 25rem;
+    max-height: 30rem;
+    object-fit: cover;
+    border-radius: var(--radius);
+    border: 2px solid var(--clr-primary-2);
+  }
+  .about-title {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
 `;
