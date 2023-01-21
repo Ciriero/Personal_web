@@ -1,13 +1,13 @@
 import React from "react";
 import CV from "../assets/CV.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import { WrapperAbout } from "../styles/About.styles";
+import { WrapperAbout, AboutCenter } from "../styles/About.styles";
 
 const About = () => {
   return (
     <WrapperAbout>
       <section className="section about">
-        <div className="section-center about-center">
+        <AboutCenter>
           <article className="about-img">
             <img
               src="../../../utils/Foto0209-2.jpg"
@@ -35,11 +35,11 @@ const About = () => {
               </p>
             </div>
 
-            <a href={CV} download className="hero-btn">
+            <a href={CV} download className="btn">
               Descargar CV <AiOutlineDownload />
             </a>
           </article>
-        </div>
+        </AboutCenter>
       </section>
     </WrapperAbout>
   );

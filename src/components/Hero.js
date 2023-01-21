@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaLinkedin } from "react-icons/fa";
 import { ImGithub } from "react-icons/im";
-import { HeroButton, HeroCenter, HeroContainer, HeroSocial } from '../styles/Hero.styles';
+import {HeroCenter, HeroContainer, HeroSocial } from '../styles/Hero.styles';
 
 const Hero = () => {
   return (
@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="underline"></div>
         <h1>Hola</h1>
         <h4>React Frontend Developer</h4>
-        <HeroButton>¡Escríbeme!</HeroButton>
+        <button className='btn'>¡Escríbeme!</button>
         <HeroSocial>
           <FaLinkedin />
           <ImGithub />

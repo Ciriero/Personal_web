@@ -16,13 +16,7 @@ export const HeroCenter = styled.div`
   .hero-img {
     display: none;
   }
-  .underline {
-    width: 5rem;
-    height: 0.25rem;
-    margin-bottom: 1.25rem;
-    background-color: var(--clr-primary-5);
-   
-  }
+
   .hero-info {
     h1 {
       color: var(--clr-primary-2);
@@ -54,25 +48,7 @@ export const HeroCenter = styled.div`
   }
 `;
 
-export const HeroButton = styled.button`
-  text-transform: uppercase;
-  background: var(--clr-primary-5);
-  color: var(--clr-primary-1);
-  padding: 0.375rem 0.75rem;
-  letter-spacing: var(--spacing);
-  display: inline-block;
-  font-weight: 700;
-  transition: var(--transition);
-  font-size: 0.875rem;
-  border: 2px solid transparent;
-  cursor: pointer;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
-  border-radius: var(--radius);
-  margin: 3rem 0rem;
-  :hover {
-    background-color: var(--clr-primary-9);
-  }
-`;
+
 
 export const HeroSocial = styled.div`
   font-size: 1.5rem;
