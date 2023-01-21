@@ -51,21 +51,21 @@ export const ItemCenter = styled.div`
     padding-left: 37px;
   }
   .timeline-dot {
-      height: 1rem;
-      width: 1rem;
-      background-color: #F55050;
-      box-shadow: 0 0 0 3px #F48484;
-      position: absolute;
-      border-radius: 50%;
-      top: 10px;
-      left: 0;
-    }
-    .timeline-date {
-      font-size: 1rem;
-      font-weight: bold;
-      color: var(--clr-grey-2);
-      margin: 0.4rem 0 1rem;
-    }
+    height: 1rem;
+    width: 1rem;
+    background-color: #f55050;
+    box-shadow: 0 0 0 3px #f48484;
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    left: 0;
+  }
+  .timeline-date {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--clr-grey-2);
+    margin: 0.4rem 0 1rem;
+  }
   @media screen and (min-width: 800px) {
     :nth-child(odd) {
       padding-right: calc(50% + 30px);
@@ -76,9 +76,8 @@ export const ItemCenter = styled.div`
       padding-left: calc(50% + 30px);
     }
     .timeline-dot {
-        left: calc(50% - 8px);
+      left: calc(50% - 8px);
     }
-   
   }
 `;
 
