@@ -14,7 +14,7 @@ export const WrapperTimeline = styled.section`
 
 export const TimelineCenter = styled.div`
   max-width: 1100px;
-  width: 90vw;
+  width: 70vw;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;

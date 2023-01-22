@@ -18,7 +18,6 @@ export const WrapperProyects = styled.section`
     width: 80%;
     margin: 0 auto;
     margin-bottom: 5rem;
-    
   }
   .claseb,
   .btn-proy {
@@ -32,17 +31,16 @@ export const WrapperProyects = styled.section`
     text-transform: capitalize;
     box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
     font-size: 1rem;
-   
     cursor: pointer;
-    :hover {
-        background-color: var(--clr-white);
-        border: 1px solid var(--clr-primary-5);
+    &:hover {
+      background-color: var(--clr-white);
+      border: 1px solid var(--clr-primary-5);
     }
   }
-  .claseb{
-      background-color: var(--clr-primary-5);
-      color: var(--clr-white);
-    }
+  .claseb {
+    background-color: var(--clr-primary-5);
+    color: var(--clr-white);
+  }
 `;
 
 export const WrapperCenter = styled.div`
@@ -94,7 +92,7 @@ export const ButtonProyect = styled.button`
   letter-spacing: 0.2rem;
   box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
   cursor: pointer;
-  :hover{
+  :hover {
     background-color: var(--clr-primary-4);
   }
 `;
