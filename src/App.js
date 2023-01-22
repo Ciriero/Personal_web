@@ -1,6 +1,7 @@
 import About from "./components/About";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Proyects from "./components/Proyects";
 import Timeline from "./components/Timeline";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <About />
       <Timeline />
+      <Proyects />
     </>
   );
 }
