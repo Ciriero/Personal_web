@@ -46,6 +46,8 @@ Variables
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
+
+  
 }
 /*
 =============== 
@@ -158,3 +160,17 @@ p {
   background-color: var(--clr-primary-9);
 }
 
+/* SWAL */
+
+.swal-modal {
+  background-color: var(--clr-primary-5);
+  border: 3px solid white;
+}
+
+.swal-button {
+  background-color: var(--clr-primary-8);
+}
+.swal-button:hover{
+  color: var(--clr-primary-5);
+  
+}

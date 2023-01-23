@@ -40,16 +40,21 @@ export const WrapperProyects = styled.section`
   .claseb {
     background-color: var(--clr-primary-5);
     color: var(--clr-white);
+    margin-bottom: 1rem;
   }
 `;
 
 export const WrapperCenter = styled.div`
-  width: 60vw;
+  width: 80vw;
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
   column-gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));*/
+   @media screen and (min-width: 800px){
+    grid-template-columns: repeat(3, 1fr);
+  } 
   .card {
     margin-bottom: 2rem;
     background-color: var(--clr-primary-9);

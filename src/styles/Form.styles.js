@@ -48,7 +48,7 @@ export const FormInfo = styled.article`
   label {
     letter-spacing: 0.2rem;
     font-family: var(--ff-primary);
-    color: var(--clr-primary-5)
+    color: var(--clr-primary-5);
   }
 
   input {
