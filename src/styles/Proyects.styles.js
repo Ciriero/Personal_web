@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const WrapperProyects = styled.section`
   padding: 4rem 0rem;
   position: relative;
+  scroll-padding-bottom: 5rem;
   .title-portfolio {
     text-align: center;
     margin-bottom: 5rem;

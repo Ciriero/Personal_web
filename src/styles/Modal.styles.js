@@ -9,6 +9,7 @@ export const ModalContent = styled.div`
   min-width: 40%;
   height: 5rem;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--clr-white);
   text-transform: uppercase;
   position: fixed;
   top: 6rem;

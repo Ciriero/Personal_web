@@ -8,7 +8,7 @@ import LogoItem from "./LogoItem";
 const Proyects = () => {
   const [active, setActive] = useState("pro");
   return (
-    <WrapperProyects>
+    <WrapperProyects id="projects">
       <div className="title-portfolio">
         <h1>Portfolio</h1>
         <div className="underline udl"></div>
