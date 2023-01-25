@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     title: "App Music",
-    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus natus nemo, corporis quae beatae totam.",
+    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus natus nemo, corporis quae beatae totam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus natus nemo, corporis quae beatae totam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus natus nemo, corporis quae beatae totam.",
     image: "../../utils/image-4.jpeg",
   },
   {

@@ -10,17 +10,22 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       <BtnClose onClick={() => setIsOpen(!isOpen)}>
         <FaTimes />
       </BtnClose>
+
       <ul className="side-items">
         {menu.map((item) => (
           <li key={item.id}>
-            <a href="#" onClick={() => setIsOpen(!isOpen)}>
+            <a href={item.href} onClick={() => setIsOpen(!isOpen)}>
               {item.title}
             </a>
           </li>
         ))}
         <Social>
-          <FaLinkedin />
-          <ImGithub />
+          <a href="https://www.linkedin.com/in/ciriero/" target="_blank">
+            <FaLinkedin />
+          </a>
+          <a href="https://github.com/Ciriero" target="_blank">
+            <ImGithub />
+          </a>
         </Social>
       </ul>
     </LibraryContainer>

@@ -26,7 +26,9 @@ const Navbar = () => {
         <NavCenter>
           <div className="nav-header">
             <h3>
-              Christian<span>Calle</span>
+              <a href="#inicio">
+                Christian<span>Calle</span>
+              </a>
             </h3>
             <button className="nav-btn" onClick={() => setIsOpen(!isOpen)}>
               <FaBars />
@@ -35,7 +37,7 @@ const Navbar = () => {
           <ul className="nav-links">
             {menu.map((item) => (
               <li key={item.id}>
-                <a href={item.link}>{item.title}</a>
+                <a href={item.href}>{item.title}</a>
               </li>
             ))}
           </ul>

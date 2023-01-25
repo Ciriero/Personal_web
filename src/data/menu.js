@@ -1,6 +1,7 @@
 export const menu = [
-  { id: 1, link: "#", title: "About" },
-  { id: 2, link: "#", title: "Timeline" },
-  { id: 3, link: "#", title: "Proyectos" },
-  { id: 4, link: "#", title: "Contacto" },
+  { id: 1, title: "Inicio", href: "#inicio" },
+  { id: 2, title: "About", href: "#about" },
+  { id: 3, title: "Timeline", href: "#timeline" },
+  { id: 4, title: "Proyectos", href: "#projects" },
+  { id: 5, title: "Contacto", href: "#contact" },
 ];

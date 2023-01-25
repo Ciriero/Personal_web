@@ -158,3 +158,27 @@ p {
   background-color: var(--clr-primary-9);
 }
 
+/* HTML LINKS */
+html {
+  scroll-behavior: smooth;
+}
+#inicio,
+#about,
+#timeline,
+#projects,
+#contact {
+  scroll-margin-top: 5rem;
+}
+
+/* SWAL */
+.swal-modal {
+  background-color: var(--clr-primary-5);
+  border: 3px solid white;
+}
+
+.swal-button {
+  background-color: var(--clr-primary-8);
+}
+.swal-button:hover {
+  color: var(--clr-primary-5);
+}

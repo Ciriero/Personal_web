@@ -5,7 +5,7 @@ import TimelineItem from "./TimelineItem";
 
 const Timeline = () => {
   return (
-    <WrapperTimeline>
+    <WrapperTimeline id="timeline">
       <div className="timeline-title">
         <h2>Timeline</h2>
         <div className="underline udl"></div>

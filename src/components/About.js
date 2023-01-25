@@ -5,7 +5,7 @@ import { WrapperAbout, AboutCenter } from "../styles/About.styles";
 
 const About = () => {
   return (
-    <WrapperAbout>
+    <WrapperAbout id="about">
       <section className="section about">
         <AboutCenter>
           <article className="about-img">
