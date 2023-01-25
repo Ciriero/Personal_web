@@ -160,10 +160,13 @@ p {
 
 /* HTML LINKS */
 html {
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
-
-#projects {
+#inicio,
+#about,
+#timeline,
+#projects,
+#contact {
   scroll-margin-top: 5rem;
 }
 
@@ -179,5 +182,3 @@ html {
 .swal-button:hover {
   color: var(--clr-primary-5);
 }
-
-

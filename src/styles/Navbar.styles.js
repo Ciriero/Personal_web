@@ -28,6 +28,9 @@ export const NavCenter = styled.div`
     h3 {
       text-shadow: 5px 4px 8px rgba(0, 0, 0, 0.47);
     }
+    a{
+      color: var(--clr-primary-1)
+    }
     span {
       color: var(--clr-primary-5);
     }

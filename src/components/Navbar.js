@@ -26,7 +26,9 @@ const Navbar = () => {
         <NavCenter>
           <div className="nav-header">
             <h3>
-              Christian<span>Calle</span>
+              <a href="#inicio">
+                Christian<span>Calle</span>
+              </a>
             </h3>
             <button className="nav-btn" onClick={() => setIsOpen(!isOpen)}>
               <FaBars />

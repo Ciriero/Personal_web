@@ -47,7 +47,7 @@ const Form = () => {
   };
 
   return (
-    <WrapperForm>
+    <WrapperForm id="contact">
       <div className="form-title">
         <h2>Contacto</h2>
         <div className="underline udl"></div>
