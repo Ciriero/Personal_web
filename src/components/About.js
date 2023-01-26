@@ -1,25 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CV from "../assets/CV.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { WrapperAbout, AboutCenter } from "../styles/About.styles";
+
 
 const About = () => {
   return (
     <WrapperAbout id="about">
       <section className="section about">
         <AboutCenter>
-          <article className="about-img">
+          <article className="about-img" data-aos="fade-down">
             <img
               src="../../../utils/Foto0209-2.jpg"
               alt=""
               className="about-photo"
             />
           </article>
-          <article className="about-info">
+          <article className="about-info" data-aos="fade-in">
             <div className="about-title">
               <h2>About</h2>
               <div className="underline"></div>
-              <p>
+              <p >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatum iusto inventore, esse dolor cumque eos pariatur, id
                 repellat enim animi fugiat, eaque natus expedita distinctio

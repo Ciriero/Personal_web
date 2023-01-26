@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ErrorForm from "../ErrorForm";
 import { WrapperForm, FormCenter, FormInfo } from "../styles/Form.styles";
 import Modal from "./Modal";
-import swal from 'sweetalert';
+import swal from "sweetalert";
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -11,9 +11,9 @@ const Form = () => {
   const [emailError, setEmailError] = useState();
   const [modalStatus, setModalStatus] = useState(false);
   const [contentModal, setContentModal] = useState("");
-  const [permanentModal, setPermanentModal] = useState(contentModal)
-  console.log("contens",contentModal)
-  console.log("permanet",permanentModal);
+  const [permanentModal, setPermanentModal] = useState(contentModal);
+  console.log("contens", contentModal);
+  console.log("permanet", permanentModal);
 
   useEffect(() => {
     validateEmail({ email, setEmailError });
@@ -29,7 +29,10 @@ const Form = () => {
       setModalStatus(true);
       setContentModal("Completa todos los campos");
     } else {
-        swal(`¡Gracias, ${name}!`, "Te responderé lo antes posible", "success");
+      swal(`¡Gracias, ${name}!`, "Te responderé lo antes posible", "success");
+      setEmail("");
+      setText("");
+      setName("");
     }
   };
 
@@ -43,13 +46,13 @@ const Form = () => {
   const closeModal = () => {
     setModalStatus(false);
     // setContentModal("");
-    setPermanentModal(contentModal)
+    setPermanentModal(contentModal);
   };
 
   return (
     <WrapperForm id="contact">
       <div className="form-title">
-        <h2>Contacto</h2>
+        <h2 data-aos="fade-up">Contacto</h2>
         <div className="underline udl"></div>
       </div>
       <FormCenter>
@@ -96,13 +99,13 @@ const Form = () => {
             ></textarea>
             <button className="btn btn-form">Enviar</button>
             {
-        <Modal
-          closeModal={closeModal}
-          contentModal={contentModal}
-          modalStatus={modalStatus}
-          permanentModal={permanentModal}
-        />
-      }
+              <Modal
+                closeModal={closeModal}
+                contentModal={contentModal}
+                modalStatus={modalStatus}
+                permanentModal={permanentModal}
+              />
+            }
           </form>
         </FormInfo>
       </FormCenter>
