@@ -36,6 +36,7 @@ export const WrapperProyects = styled.section`
     &:hover {
       background-color: var(--clr-white);
       border: 1px solid var(--clr-primary-5);
+      color: var(--clr-grey-1)
     }
   }
   .claseb {
@@ -66,7 +67,7 @@ export const WrapperCenter = styled.div`
     grid-template-rows: auto 1fr auto;
   }
   .card-logo {
-    background-color: var(--clr-grey-9);
+    background-color: var(--clr-primary-7);
   }
   .img-logo {
     width: 5rem;

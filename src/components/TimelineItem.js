@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ItemCenter, TimelineContent } from "../styles/Timeline.styles";
 
 const TimelineItem = ({ item }) => {
@@ -6,7 +6,7 @@ const TimelineItem = ({ item }) => {
     <ItemCenter>
       <div className="timeline-dot"></div>
       <div className="timeline-date">{item.year}</div>
-      <TimelineContent>
+      <TimelineContent data-aos="zoom-in">
         <h3>{item.title}</h3>
         <p>{item.text}</p>
       </TimelineContent>
