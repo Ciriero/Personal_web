@@ -4,7 +4,7 @@ import appmusic from "../img/appmusic.jpg";
 import todo from "../img/todo.jpg";
 import quiz from "../img/quiz.jpg";
 import web from "../img/web.jpg";
-import soon from "../img/soon.jpg"
+import soon from "../img/soon.jpg";
 
 export const projects = [
   {
@@ -17,7 +17,7 @@ export const projects = [
     id: 2,
     title: "App Music",
     text: "Primera app subida a Git. React, styled-components y responsive.",
-    image:appmusic,
+    image: appmusic,
   },
   {
     id: 3,
