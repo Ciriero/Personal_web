@@ -26,8 +26,7 @@ const Form = () => {
       email.trim().length === 0 ||
       text.trim().length === 0
     ) {
-      setModalStatus(true);
-      setContentModal("Completa todos los campos");
+      swal("Cumplimenta todos los campos, por favor");
     } else {
       swal(`¡Gracias, ${name}!`, "Te responderé lo antes posible", "success");
       setEmail("");
@@ -98,14 +97,14 @@ const Form = () => {
               placeholder="Escribe..."
             ></textarea>
             <button className="btn btn-form">Enviar</button>
-            {
+            {/* {
               <Modal
                 closeModal={closeModal}
                 contentModal={contentModal}
                 modalStatus={modalStatus}
                 permanentModal={permanentModal}
               />
-            }
+            } */}
           </form>
         </FormInfo>
       </FormCenter>

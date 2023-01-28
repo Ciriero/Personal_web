@@ -174,7 +174,7 @@ html {
 
 /* SWAL */
 .swal-modal {
-  background-color: var(--clr-primary-5);
+  background-color: var(--clr-primary-7);
   border: 3px solid white;
 }
 

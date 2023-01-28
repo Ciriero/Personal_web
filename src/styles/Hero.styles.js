@@ -75,7 +75,8 @@ export const BtnDark = styled.button`
   cursor: pointer;
   width: 2rem;
   height: 2rem;
-  border-radius: 50%;
+  line-height: 2rem;
+  
   box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.27);
   transition: var(--transitionMode);
   background-color: ${({ theme }) => theme.brndark};

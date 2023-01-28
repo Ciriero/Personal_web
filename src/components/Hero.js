@@ -24,7 +24,7 @@ const Hero = ({ theme, setTheme }) => {
       <HeroCenter>
         <article className="hero-info" data-aos="fade-right">
           <div className="underline"></div>
-          <h1>Hola</h1>
+          <h1>Hola, soy Christian</h1>
           <h4>React Frontend Developer</h4>
           <button className="btn">¡Escríbeme!</button>
           <HeroSocial>
