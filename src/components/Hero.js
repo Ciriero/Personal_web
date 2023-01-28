@@ -3,6 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { ImGithub } from "react-icons/im";
 import {BsFillMoonFill, BsFillSunFill} from "react-icons/bs"
 import { HeroCenter, HeroContainer, HeroSocial, BtnDark } from "../styles/Hero.styles";
+import cc1 from "../img/ccc1.jpg"
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -40,7 +41,7 @@ const Hero = ({ theme, setTheme }) => {
           <BtnDark onClick={()=> changeTheme()} className="btn-dark">{theme === "lg" ? <BsFillMoonFill /> : <BsFillSunFill />}</BtnDark>
         </article>
         <article className="hero-img" data-aos="fade-left">
-          <img src="../../../utils/ccc1.jpg" alt="" className="hero-photo" />
+          <img src={cc1} alt="" className="hero-photo" />
         </article>
         
       </HeroCenter>

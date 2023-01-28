@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import CV from "../assets/CV.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { WrapperAbout, AboutCenter } from "../styles/About.styles";
+import cc2 from "../img/Foto0209-2.jpg"
 
 const About = () => {
   return (
@@ -10,7 +11,7 @@ const About = () => {
         <AboutCenter>
           <article className="about-img" data-aos="fade-down">
             <img
-              src="../../../utils/Foto0209-2.jpg"
+              src={cc2}
               alt="The Bridge"
               className="about-photo"
             />
@@ -35,7 +36,7 @@ const About = () => {
               </p>
               <p>
                 Actualmente estoy desarrollando un e-commerce, una pequeña
-                editorial, con React y Styled-Components para el front y Node,
+                editorial, con React y Styled-Components para el front y Node, y
                 Express y MongoDB para el backend. También estoy aprendiendo
                 testing con Jest.
               </p>
