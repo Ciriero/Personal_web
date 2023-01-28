@@ -31,6 +31,9 @@ export const AboutCenter = styled.div`
   h2 {
     color: ${({theme}) => theme.titleAbout}
   }
+  a{
+    color: #CF6679;
+  }
 
   .btn {
     background-color: ${({ theme }) => theme.bgherobtn};

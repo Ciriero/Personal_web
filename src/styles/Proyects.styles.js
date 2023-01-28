@@ -30,8 +30,6 @@ export const WrapperProyects = styled.section`
     margin: 0 1rem;
     padding: 0.5rem;
     border-radius: var(--radius);
-    /* background-color: var(--clr-grey-9);
-    color: var(--clr-primary-5); */
     background-color: ${({ theme }) => theme.bgbtnproyects};
       color: ${({ theme }) => theme.colorbntproyects};
     transition: var(--transition);
@@ -49,6 +47,9 @@ export const WrapperProyects = styled.section`
     background-color: ${({theme}) => theme.activebtnprotects};
     color: var(--clr-primary-4);
     margin-bottom: 1rem;
+    @media screen and (max-width: 306px){
+      margin: 1rem;
+    }
   }
 `;
 

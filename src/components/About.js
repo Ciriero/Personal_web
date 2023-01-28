@@ -3,7 +3,6 @@ import CV from "../assets/CV.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { WrapperAbout, AboutCenter } from "../styles/About.styles";
 
-
 const About = () => {
   return (
     <WrapperAbout id="about">
@@ -12,7 +11,7 @@ const About = () => {
           <article className="about-img" data-aos="fade-down">
             <img
               src="../../../utils/Foto0209-2.jpg"
-              alt=""
+              alt="The Bridge"
               className="about-photo"
             />
           </article>
@@ -20,20 +19,27 @@ const About = () => {
             <div className="about-title">
               <h2>About</h2>
               <div className="underline"></div>
-              <p >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum iusto inventore, esse dolor cumque eos pariatur, id
-                repellat enim animi fugiat, eaque natus expedita distinctio
-                fuga. Ipsum vero cum dignissimos corrupti dolorum porro expedita
-                quidem cupiditate, neque aliquam. Dignissimos, veniam.
+              <p>
+                Mi nombre es Christian y soy <b>desarrollador frontend</b>. Hace
+                dos años que comencé a estudiar programación y, desde entonces,
+                no he dejado de aprender: pequeños cursos, grandes cursos,
+                tutoriales, preguntas en foros, errores aparentemente
+                inexplicables que, finalmente, encuentran solución y muchas,
+                muchísimas repeticiones y proyectos.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-                reprehenderit asperiores necessitatibus nostrum quod fugiat,
-                facilis iste dolore maiores perspiciatis quaerat ut illo alias,
-                quia quisquam porro deserunt illum explicabo sequi sapiente
-                minus pariatur magnam iure. Minima ea alias inventore.
+                Además, estoy certificado como Full Stack por{" "}
+                <a href="https://www.thebridge.tech/" target="_blank">
+                  The Bridge.
+                </a>
               </p>
+              <p>
+                Actualmente estoy desarrollando un e-commerce, una pequeña
+                editorial, con React y Styled-Components para el front y Node,
+                Express y MongoDB para el backend. También estoy aprendiendo
+                testing con Jest.
+              </p>
+              <p>¡Puedes descargar mi currículum justo aquí debajo!</p>
             </div>
 
             <a href={CV} download className="btn">

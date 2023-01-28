@@ -26,7 +26,9 @@ const Hero = ({ theme, setTheme }) => {
           <div className="underline"></div>
           <h1>Hola, soy Christian</h1>
           <h4>React Frontend Developer</h4>
-          <button className="btn">¡Escríbeme!</button>
+          <a href="#contact">
+            <button className="btn">¡Escríbeme!</button>
+          </a> 
           <HeroSocial>
             <a href="https://www.linkedin.com/in/ciriero/" target="_blank">
               <FaLinkedin />
