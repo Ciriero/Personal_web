@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.header`
-  background-color: var(--clr-primary-9);
-  transition: 1s all ease;
+  background-color: ${({ theme }) => theme.bodyHero};
+  transition: var(--transitionMode);
 `;
 
 export const HeroCenter = styled.div`
@@ -19,15 +19,22 @@ export const HeroCenter = styled.div`
 
   .hero-info {
     h1 {
-      color: var(--clr-primary-2);
-      transition: 1s all ease;
+      color: ${({ theme }) => theme.colorHero};
+      transition: var(--transitionMode);
     }
     h4 {
       margin-bottom: 0.5rem;
       letter-spacing: 0.5rem;
       line-height: 2rem;
-      color: var(--clr-primary-2);
-      transition: 1s all ease;
+      color: ${({ theme }) => theme.colorHero};
+      transition: var(--transitionMode);
+    }
+    .btn {
+      background-color: ${({ theme }) => theme.bgherobtn};
+      color: ${({ theme }) => theme.colorherobtn};
+      :hover {
+        background-color: ${({ theme }) => theme.bgherobtnhover};
+      }
     }
   }
   @media screen and (min-width: 800px) {
@@ -48,8 +55,6 @@ export const HeroCenter = styled.div`
   }
 `;
 
-
-
 export const HeroSocial = styled.div`
   font-size: 1.5rem;
 
@@ -57,11 +62,29 @@ export const HeroSocial = styled.div`
     margin-right: 2rem;
     margin-top: 3rem;
     cursor: pointer;
-    color: var(--clr-primary-1);
-    transition: 0.5s all ease;
+    color: ${({ theme }) => theme.colorlogohero};
+    transition: var(--transitionMode);
     :hover {
       color: var(--clr-primary-5);
     }
   }
 `;
 
+export const BtnDark = styled.button`
+  margin-top: 3rem;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.27);
+  transition: var(--transitionMode);
+  background-color: ${({ theme }) => theme.brndark};
+  :active {
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.4);
+    transform: scale(95%);
+  }
+  svg {
+    color: ${({ theme }) => theme.colorsvgdard};
+    transition: var(--transitionMode);
+  }
+`;

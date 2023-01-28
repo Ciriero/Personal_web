@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 export const WrapperTimeline = styled.section`
-  background-color: var(--clr-primary-9);
+  background-color: ${({theme}) => theme.bgtimeline};
+  transition: var(--transitionMode);
   padding: 6rem 1rem;
   .timeline-title {
     text-align: center;
     margin-bottom: 5rem;
+    h2 {
+      color: ${({theme}) => theme.timelinetitle}
+    }
   }
   .udl {
     margin: 0 auto;
@@ -63,7 +67,7 @@ export const ItemCenter = styled.div`
   .timeline-date {
     font-size: 1rem;
     font-weight: bold;
-    color: var(--clr-grey-2);
+    color: ${({theme}) => theme.timelinetitle};
     margin: 0.4rem 0 1rem;
   }
   @media screen and (min-width: 800px) {
@@ -82,13 +86,13 @@ export const ItemCenter = styled.div`
 `;
 
 export const TimelineContent = styled.div`
-  background-color: var(--clr-primary-7);
+  background-color: ${({theme}) => theme.cardtimeline}; 
   padding: 1.9rem;
   border-radius: 5px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
   h3 {
     font-size: 1.25rem;
-    color: var(--clr-white);
+    color: var(--clr-primary-5);
     margin: 0 0 0.7rem;
     text-transform: capitalize;
   }
@@ -96,7 +100,7 @@ export const TimelineContent = styled.div`
     font-size: 1rem;
     font-weight: 300;
     line-height: 22px;
-    color: var(--clr-grey-4);
     font-style: italic;
+    color: ${({theme}) => theme.texttimeline}
   }
 `;

@@ -4,9 +4,13 @@ export const WrapperProyects = styled.section`
   padding: 4rem 0rem;
   position: relative;
   scroll-padding-bottom: 5rem;
+  background-color: ${({theme}) => theme.bgportfoloio};
   .title-portfolio {
     text-align: center;
     margin-bottom: 5rem;
+    h2 {
+      color: ${({theme}) => theme.titleportfolio}
+    }
   }
   .udl {
     margin: 0 auto;
@@ -26,22 +30,24 @@ export const WrapperProyects = styled.section`
     margin: 0 1rem;
     padding: 0.5rem;
     border-radius: var(--radius);
-    background-color: var(--clr-grey-9);
-    color: var(--clr-primary-5);
+    /* background-color: var(--clr-grey-9);
+    color: var(--clr-primary-5); */
+    background-color: ${({ theme }) => theme.bgbtnproyects};
+      color: ${({ theme }) => theme.colorbntproyects};
     transition: var(--transition);
     text-transform: capitalize;
     box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
     font-size: 1rem;
     cursor: pointer;
     &:hover {
-      background-color: var(--clr-white);
+      background-color: ${({ theme }) => theme.colorbntproyects};
       border: 1px solid var(--clr-primary-5);
-      color: var(--clr-grey-1)
+      color: var(--clr-grey-6)
     }
   }
   .claseb {
-    background-color: var(--clr-primary-5);
-    color: var(--clr-white);
+    background-color: ${({theme}) => theme.activebtnprotects};
+    color: var(--clr-primary-4);
     margin-bottom: 1rem;
   }
 `;
@@ -59,7 +65,7 @@ export const WrapperCenter = styled.div`
   } 
   .card {
     margin-bottom: 2rem;
-    background-color: var(--clr-primary-9);
+    background-color: ${({theme}) => theme.bgcardproyects};
     padding: 0.9rem;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
     border-radius: var(--radius);
@@ -67,7 +73,7 @@ export const WrapperCenter = styled.div`
     grid-template-rows: auto 1fr auto;
   }
   .card-logo {
-    background-color: var(--clr-primary-7);
+    background-color: ${({theme}) => theme.bgcardproyects};
   }
   .img-logo {
     width: 5rem;
@@ -77,15 +83,16 @@ export const WrapperCenter = styled.div`
   .card-info {
     text-align: center;
     h3 {
+      margin-top: 1rem;
       font-size: 1rem;
-      color: var(--clr-primary-3);
+      color: var(--clr-primary-5);
+    }
+    p {
+      color: ${({theme}) => theme.texttimeline}
     }
   }
   img {
     border-radius: var(--radius);
-  }
-  h3 {
-    margin-top: 1rem;
   }
 `;
 
@@ -93,8 +100,8 @@ export const ButtonProyect = styled.button`
   padding: 0.3rem;
   border: none;
   border-radius: var(--radius);
-  background-color: var(--clr-primary-6);
-  color: var(--clr-white);
+  background-color: ${({theme}) => theme.btngitproyect};
+  color: ${({theme}) => theme.btncolorgitproyect};
   transition: var(--transition);
   letter-spacing: 0.2rem;
   box-shadow: 0 1px 3px rgb(0 0 0 / 20%);

@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const WrapperAbout = styled.div`
-  transition: 1s all ease;
   padding-top: 5rem;
+  background-color: ${({theme}) => theme.aboutbg};
+  transition: var(--transitionMode);
   .about {
     max-width: 1170px;
     width: 80vw;
@@ -26,5 +27,16 @@ export const AboutCenter = styled.div`
   .about-title {
     margin-bottom: 2rem;
     text-align: left;
+  }
+  h2 {
+    color: ${({theme}) => theme.titleAbout}
+  }
+
+  .btn {
+    background-color: ${({ theme }) => theme.bgherobtn};
+      color: ${({ theme }) => theme.colorherobtn};
+      :hover {
+        background-color: ${({ theme }) => theme.bgherobtnhover};
+      }
   }
 `;

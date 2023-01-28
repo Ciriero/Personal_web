@@ -1,5 +1,6 @@
 import React from 'react'
-import { ErrorWrapper } from './styles/Error.styles'
+import {ErrorWrapper} from "../styles/Error.styles"
+
 
 const ErrorForm = ({error}) => {
   return (

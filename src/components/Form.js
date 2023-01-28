@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import ErrorForm from "../ErrorForm";
 import { WrapperForm, FormCenter, FormInfo } from "../styles/Form.styles";
 import Modal from "./Modal";
 import swal from "sweetalert";
+import ErrorForm from "./ErrorForm";
 
 const Form = () => {
   const [name, setName] = useState("");

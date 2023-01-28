@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ErrorWrapper = styled.small`
 font-size: 0.7rem;
-color: red;
+color: #CF6679;
 letter-spacing: 0.1rem;
 font-style: italic;
 margin-left: 1rem;

@@ -37,10 +37,15 @@ Variables
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
+  --clr-white: #f2f7f5;
+  /*dar mode */
+  --clr-black: #121212;
+  --clr-primary-dm: #3700b3;
+  --clr-primary-variant: #BB86FC;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
+  --transitionMode: 0.7s all ease;
   --spacing: 0.25rem;
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -154,9 +159,6 @@ p {
   margin: 3rem 0rem;
 }
 
-.btn:hover {
-  background-color: var(--clr-primary-9);
-}
 
 /* HTML LINKS */
 html {

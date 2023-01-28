@@ -10,7 +10,7 @@ const Proyects = () => {
   return (
     <WrapperProyects id="projects">
       <div className="title-portfolio">
-        <h1>Portfolio</h1>
+        <h2>Portfolio</h2>
         <div className="underline udl"></div>
         <p className="intro-proyect">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nisi
