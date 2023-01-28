@@ -10,9 +10,11 @@ export const NavContainer = styled.nav`
   align-items: center;
   z-index: 10;
   justify-content: center;
-  background-color: ${(props) =>
-    props.navbar ? "var(--clr-white)" : "var(--clr-primary-10)"};
-  transition: 0.5s all ease;
+  /* background-color: ${(props) =>
+    props.navbar ? "var(--clr-white)" : "var(--clr-primary-10)"}; */
+    background-color: ${(props) =>
+    props.navbar && props.theme ? props.theme.navbar : props.theme.navbar2};
+  transition: var(--transitionMode);
   box-shadow: ${(props) =>
     props.navbar ? "0px 14px 12px -3px rgba(0,0,0,0.61)" : ""};
 `;
@@ -29,7 +31,9 @@ export const NavCenter = styled.div`
       text-shadow: 5px 4px 8px rgba(0, 0, 0, 0.47);
     }
     a{
-      color: var(--clr-primary-1)
+      color: ${({theme}) => theme.namenavbar};
+      transition: var(--transitionMode);
+      
     }
     span {
       color: var(--clr-primary-5);
@@ -45,6 +49,7 @@ export const NavCenter = styled.div`
   }
   .nav-links {
     display: none;
+
   }
   @media screen and (min-width: 800px) {
     display: flex;
@@ -62,7 +67,7 @@ export const NavCenter = styled.div`
         margin: 0.05rem;
       }
       a {
-        color: var(--clr-grey-3);
+        color: ${({theme}) => theme.navlinkscolor};
         font-size: 1rem;
         font-weight: bold;
         text-transform: capitalize;

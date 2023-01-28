@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const WrapperForm = styled.section`
-  background-color: var(--clr-primary-9);
+  background-color: ${({ theme }) => theme.bgform};
   padding: 6rem 1rem;
   .form-title {
     text-align: center;
+    h2 {
+      color: ${({ theme }) => theme.titleform};
+    }
   }
   .udl {
     margin: 0 auto;
@@ -28,7 +31,6 @@ export const FormCenter = styled.div`
     .form-img {
       margin-left: 0rem;
       justify-self: start;
-  
     }
   }
 `;
@@ -48,22 +50,28 @@ export const FormInfo = styled.article`
   label {
     letter-spacing: 0.2rem;
     font-family: var(--ff-primary);
-    color: var(--clr-primary-5);
+    color: ${({ theme }) => theme.labelform};
   }
 
-  input {
-   
-  }
   textarea,
   input {
     width: 100%;
     border: none;
-   padding: 1rem;
-   outline: none;
-    ::placeholder{
-        color: var(--clr-grey-6);
-        font-size: 0.7rem;
-        padding: 0.3rem;
+    padding: 1rem;
+    outline: none;
+    background-color: ${({ theme }) => theme.inputs};
+    color: ${({ theme }) => theme.colorinputs};
+    ::placeholder {
+      color: var(--clr-grey-6);
+      font-size: 0.7rem;
+      padding: 0.3rem;
+    }
+  }
+  .btn {
+    background-color: ${({ theme }) => theme.bgherobtn};
+    color: ${({ theme }) => theme.colorherobtn};
+    :hover {
+      background-color: ${({ theme }) => theme.bgherobtnhover};
     }
   }
   .btn-form {
