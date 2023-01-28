@@ -60,7 +60,7 @@ const lgTheme = {
     colorbntproyects: "var(--clr-primary-5)",
     activebtnprotects: "var(--clr-primary-7)",
     bgcardproyects: "var(--clr-primary-9)",
-    btngitproyect: "var(--clr-primary-6)",
+    btngitproyect: "#FEB139",
     btncolorgitproyect: "var(--clr-white)",
     bgform: "var(--clr-primary-9)",
     titleform:  "var(--clr-primary-2)",

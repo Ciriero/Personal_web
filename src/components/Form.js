@@ -51,7 +51,7 @@ const Form = () => {
   return (
     <WrapperForm id="contact">
       <div className="form-title">
-        <h2 data-aos="fade-up">Contacto</h2>
+        <h2 data-aos="fade-in">Contacto</h2>
         <div className="underline udl"></div>
       </div>
       <FormCenter>
