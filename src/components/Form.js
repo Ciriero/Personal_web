@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { WrapperForm, FormCenter, FormInfo } from "../styles/Form.styles";
-import Modal from "./Modal";
 import swal from "sweetalert";
 import ErrorForm from "./ErrorForm";
+import emailsv from "../img/email.svg"
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -56,7 +56,7 @@ const Form = () => {
       </div>
       <FormCenter>
         <article className="form-img">
-          <img src="../../../utils/email.svg" alt="" className="form-photo" />
+          <img src={emailsv} alt="form" className="form-photo" />
         </article>
         <FormInfo className="form-info">
           <form action="" onSubmit={handleClic}>

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import CV from "../assets/CV.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { WrapperAbout, AboutCenter } from "../styles/About.styles";
-import cc2 from "../img/Foto0209-2.jpg"
+import cc2 from "../img/Foto0209-2.jpg";
 
 const About = () => {
   return (
@@ -10,11 +10,7 @@ const About = () => {
       <section className="section about">
         <AboutCenter>
           <article className="about-img" data-aos="fade-down">
-            <img
-              src={cc2}
-              alt="The Bridge"
-              className="about-photo"
-            />
+            <img src={cc2} alt="Christian" className="about-photo" />
           </article>
           <article className="about-info" data-aos="fade-in">
             <div className="about-title">

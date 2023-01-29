@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const WrapperAbout = styled.div`
   padding-top: 5rem;
-  background-color: ${({theme}) => theme.aboutbg};
+  background-color: ${({ theme }) => theme.aboutbg};
   transition: var(--transitionMode);
   .about {
     max-width: 1170px;
@@ -29,17 +29,17 @@ export const AboutCenter = styled.div`
     text-align: left;
   }
   h2 {
-    color: ${({theme}) => theme.titleAbout}
+    color: ${({ theme }) => theme.titleAbout};
   }
-  a{
-    color: #CF6679;
+  a {
+    color: #cf6679;
   }
 
   .btn {
     background-color: ${({ theme }) => theme.bgherobtn};
-      color: ${({ theme }) => theme.colorherobtn};
-      :hover {
-        background-color: ${({ theme }) => theme.bgherobtnhover};
-      }
+    color: ${({ theme }) => theme.colorherobtn};
+    :hover {
+      background-color: ${({ theme }) => theme.bgherobtnhover};
+    }
   }
 `;
