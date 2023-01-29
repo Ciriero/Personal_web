@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BtnClose = styled.button`
   background-color: transparent;
   border-color: transparent;
-  color: ${({theme}) => theme.btnclose};
+  color: ${({ theme }) => theme.btnclose};
   font-size: 2rem;
   position: relative;
   svg {
@@ -19,7 +19,7 @@ export const LibraryContainer = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  background-color: ${({theme}) => theme.sidebar};
+  background-color: ${({ theme }) => theme.sidebar};
   height: 100%;
   text-align: center;
   display: flex;
@@ -38,7 +38,7 @@ export const LibraryContainer = styled.div`
   }
   a {
     font-size: 1.5rem;
-    color: ${({theme}) => theme.sidebarmenu};
+    color: ${({ theme }) => theme.sidebarmenu};
     transition: 0.5s all ease;
     :hover {
       color: var(--clr-primary-5);

@@ -14,8 +14,9 @@ const Proyects = () => {
         <div className="underline udl"></div>
         <p className="intro-proyect">
           Abajo te dejo una selección de algunos proyectos que he subido a
-          GitHub así como de las tecnologías que he utilizado.<br />¡Si te apetece,
-          haz un pull request!
+          GitHub así como de las tecnologías que he utilizado.
+          <br />
+          ¡Si te apetece, haz un pull request!
         </p>
         <div className="buttons">
           <button

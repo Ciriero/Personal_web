@@ -4,7 +4,9 @@ export const ModalContent = styled.div`
   color: var(--clr-white);
   background-color: var(--clr-primary-5);
   transform: ${(props) =>
-    props.modalStatus && props.contentModal? "translate(0%)" : "translate(100%)"};
+    props.modalStatus && props.contentModal
+      ? "translate(0%)"
+      : "translate(100%)"};
   transition: 1s all ease-in-out;
   min-width: 40%;
   height: 5rem;
@@ -18,13 +20,11 @@ export const ModalContent = styled.div`
   text-align: left;
   line-height: 5rem;
   padding: 0rem 2rem;
-  @media screen and (max-width: 300px){
+  @media screen and (max-width: 300px) {
     width: 90%;
     font-size: 0.6rem;
   }
   p {
     color: var(--clr-white);
-    
   }
-
-`
+`;

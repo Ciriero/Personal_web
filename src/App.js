@@ -9,11 +9,11 @@ import { ThemeProvider } from "styled-components";
 import { useState } from "react";
 
 function App() {
-  const [theme, setTheme] = useState("lg")
+  const [theme, setTheme] = useState("lg");
   return (
     <ThemeProvider theme={Theme[theme]}>
       <Navbar />
-      <Hero theme={theme} setTheme={setTheme}/>
+      <Hero theme={theme} setTheme={setTheme} />
       <About />
       <Timeline />
       <Proyects />
