@@ -1,3 +1,4 @@
+/* NOT USED */
 import React, { useEffect } from "react";
 import { ModalContent } from "../styles/Modal.styles";
 
