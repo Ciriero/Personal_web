@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Personal_web/static/css/main.f59efef1.css",
+    "main.js": "/Personal_web/static/js/main.a9e27dff.js",
+    "static/media/soon.jpg": "/Personal_web/static/media/soon.3af683b9bd9d92854104.jpg",
+    "static/media/ccc1.jpg": "/Personal_web/static/media/ccc1.cd11386f1b6db74e24d5.jpg",
+    "static/media/food.jpg": "/Personal_web/static/media/food.2fb2e40e821d6f7a0331.jpg",
+    "static/media/carfax.png": "/Personal_web/static/media/carfax.12054bb0658c0b483c94.png",
+    "static/media/Foto0209-2.jpg": "/Personal_web/static/media/Foto0209-2.0cb8432a2688019fc167.jpg",
+    "static/media/web.jpg": "/Personal_web/static/media/web.ee2e54e5edebd2cecc0b.jpg",
+    "static/media/appmusic.jpg": "/Personal_web/static/media/appmusic.11ab8d13b441bfdc7c75.jpg",
+    "static/media/quiz.jpg": "/Personal_web/static/media/quiz.145b5616ea7d1f110fb1.jpg",
+    "static/media/todo.jpg": "/Personal_web/static/media/todo.6590941a16238cac2510.jpg",
+    "static/media/CV.pdf": "/Personal_web/static/media/CV.715429bb89216be7118b.pdf",
+    "static/media/nodejs.svg": "/Personal_web/static/media/nodejs.679e00d3f1224b41a5c85aca9765b898.svg",
+    "static/media/email.svg": "/Personal_web/static/media/email.c2826ca4a6a39db955e84ad5891ec83b.svg",
+    "static/media/styled.svg": "/Personal_web/static/media/styled.22d2d36c31a05bb432684c8dcfe248fb.svg",
+    "static/media/react.svg": "/Personal_web/static/media/react.0cc978f43ea437de003e85712225e83b.svg",
+    "static/media/mongodb.svg": "/Personal_web/static/media/mongodb.65cd0cbff6fe3e6539854b96c4560945.svg",
+    "static/media/sass.svg": "/Personal_web/static/media/sass.09084e13a33b2f13cd2d4e91139b5b62.svg",
+    "static/media/git.svg": "/Personal_web/static/media/git.70f099170f46f760e5d9f09849c589b6.svg",
+    "static/media/js.svg": "/Personal_web/static/media/js.63b93412a24001eff2acc22e0cb40276.svg",
+    "static/media/css.svg": "/Personal_web/static/media/css.d775a84d2e94cdab548cdffe1aa9ff83.svg",
+    "index.html": "/Personal_web/index.html",
+    "static/media/html.svg": "/Personal_web/static/media/html.51305ec564cee03372ec0fdaaa77854d.svg",
+    "main.f59efef1.css.map": "/Personal_web/static/css/main.f59efef1.css.map",
+    "main.a9e27dff.js.map": "/Personal_web/static/js/main.a9e27dff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f59efef1.css",
+    "static/js/main.a9e27dff.js"
+  ]
+}
