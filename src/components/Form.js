@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { WrapperForm, FormCenter, FormInfo } from "../styles/Form.styles";
 import swal from "sweetalert";
 import ErrorForm from "./ErrorForm";
-import emailsv from "../img/email.svg"
+import emailsv from "../img/email.svg";
+import load from "../img/load2.gif"
+import emailjs from "@emailjs/browser";
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -12,8 +14,8 @@ const Form = () => {
   const [modalStatus, setModalStatus] = useState(false);
   const [contentModal, setContentModal] = useState("");
   const [permanentModal, setPermanentModal] = useState(contentModal);
-  console.log("contens", contentModal);
-  console.log("permanet", permanentModal);
+  const [send, setSend] = useState(false);
+  const formRef = useRef();
 
   useEffect(() => {
     validateEmail({ email, setEmailError });
@@ -21,17 +23,40 @@ const Form = () => {
 
   const handleClic = (e) => {
     e.preventDefault();
+    setSend(true)
     if (
       name.trim().length === 0 ||
       email.trim().length === 0 ||
       text.trim().length === 0
     ) {
       swal("Cumplimenta todos los campos, por favor");
+      setSend(false);
     } else {
-      swal(`¡Gracias, ${name}!`, "Te responderé lo antes posible", "success");
-      setEmail("");
-      setText("");
-      setName("");
+      emailjs
+        .sendForm(
+          process.env.REACT_APP_SERVICE_ID,
+          process.env.REACT_APP_TEMPLATE_ID,
+          formRef.current,
+          process.env.REACT_APP_USERI_ID
+        )
+        .then(
+          (result) => {
+            swal(
+              `¡Gracias, ${name}!`,
+              "Te responderé lo antes posible",
+              "success"
+            );
+            setEmail("");
+            setText("");
+            setName("");
+            setSend(false);
+          },
+          (error) => {
+            swal("Lo siento, tu mensaje no se ha podido enviar");
+            e.target.reset();
+            setSend(false);
+          }
+        );
     }
   };
 
@@ -59,7 +84,7 @@ const Form = () => {
           <img src={emailsv} alt="form" className="form-photo" />
         </article>
         <FormInfo className="form-info">
-          <form action="" onSubmit={handleClic}>
+          <form onSubmit={handleClic} ref={formRef}>
             <label htmlFor="name" className="label-name">
               Nombre
             </label>
@@ -96,7 +121,7 @@ const Form = () => {
               className="input-text"
               placeholder="Escribe..."
             ></textarea>
-            <button className="btn btn-form">Enviar</button>
+            <button className="btn btn-form">{!send ? "Enviar" : <img src={load} alt="image not responding" />}</button>
             {/* {
               <Modal
                 closeModal={closeModal}
