@@ -10,7 +10,7 @@ const ProjectsItems = ({ item }) => {
         <p>{item.text}</p>
       </div>
       <div className="card-footer">
-        <ButtonProyect>GIT</ButtonProyect>
+        <ButtonProyect>GitHub</ButtonProyect>
       </div>
     </article>
   );

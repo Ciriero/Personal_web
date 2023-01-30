@@ -17,7 +17,7 @@ export const projects = [
   {
     id: 2,
     title: "App Music",
-    text: "Primera app subida a Git. React, styled-components y responsive.",
+    text: "Primera app subida a GitHub. React, styled-components y responsive.",
     image: appmusic,
     href: "https://github.com/Ciriero/AppMusic"
   },
