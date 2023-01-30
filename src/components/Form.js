@@ -122,14 +122,6 @@ const Form = () => {
               placeholder="Escribe..."
             ></textarea>
             <button className="btn btn-form">{!send ? "Enviar" : <img src={load} alt="image not responding" />}</button>
-            {/* {
-              <Modal
-                closeModal={closeModal}
-                contentModal={contentModal}
-                modalStatus={modalStatus}
-                permanentModal={permanentModal}
-              />
-            } */}
           </form>
         </FormInfo>
       </FormCenter>
